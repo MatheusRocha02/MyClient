@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyClient</title>
+    <!-- bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- estilos (CSS puro) -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body class="min-vh-100 d-flex flex-column">
+    <!-- header -->
+    <header
+        class="container-fluid px-4 py-3 d-flex justify-content-between align-items-center border-bottom shadow-sm fixed-top">
+        <div class="d-flex align-items-center gap-3">
+            <a href="https://www.adeptaautomacao.com.br/">
+                <img src="assets/img/logo-adepta.svg" alt="Logo da Adepta Sistemas e Automações" width="120">
+            </a>
+        </div>
+
+        <button id="menu-toggle" class="d-md-none border-0 bg-transparent">
+            <i class="bi bi-list fs-1"></i> <!--icone de menu-->
+        </button>
+
+        <!-- menu mobile-->
+        <nav id="mobile-menu"
+            class=" flex-column position-fixed top-0 end-0 bg-white p-4 shadow rounded z-3">
+            <button id="menu-close" class="align-self-end border-0 bg-transparent mb-3">
+                <i class="bi bi-x-lg fs-4"></i>
+            </button>
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="https://www.adeptaautomacao.com.br/quemsomos/">Sobre
+                        nós</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://ajuda.adeptaautomacao.com.br/modernoerp">Ajuda</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.adeptaautomacao.com.br/contato/">Fale
+                        conosco</a></li>
+            </ul>
+        </nav>
+
+        <!-- overlay para escurecer o fundo -->
+        <div id="menu-overlay" class="d-none"></div>
+
+
+        <!-- menu desktop -->
+        <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="https://www.adeptaautomacao.com.br/quemsomos/">Sobre
+                        nós</a></li>
+                <li class="nav-item"><a class="nav-link"
+                        href="https://ajuda.adeptaautomacao.com.br/modernoerp">Ajuda</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.adeptaautomacao.com.br/contato/">Fale
+                        conosco</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- seção principal da home -->
+    <main class="container my-5 py-5 flex-grow-1">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/home-img.jpg" alt="Imagem da Home" class="img-fluid rounded-circle">
+            </div>
+            <div class="col-md-6">
+                <h1 class="mb-2  home-title">MyClient</h1>
+                <h2 class="mb-5 fs-3">Organize, cresça e <span class="fst-italic h2-span">simplifique</span> sua rotina
+                </h2>
+                <h3 class="mb-4 fs-6 text-uppercase home-text">Com o MyClient, você leva seu negócio no bolso. Acompanhe
+                    seus clientes, organize seu dia e tenha controle de tudo de um jeito simples, onde e quando quiser.
+                </h3>
+                <div class="d-flex gap-3">
+                    <a href="clients_register.html" class="btn btn-primary ">Cadastrar Cliente</a>
+                    <a href="clients_list.html" class="btn btn-outline-secondary">Listar Clientes</a>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-wrap mt-5 align-items-center justify-content-between">
+            <div class="flex-grow-1 me-4">
+                <h4 class="fs-3 mb-4 home-list-title"><span>Por que</span> escolher o MyClient?</h4>
+                <ol class="text-uppercase big-number">
+                    <li><span>Organize</span> seus clientes em um só lugar, com acesso fácil e rápido.</li>
+                    <li><span>Acompanhe</span> o histórico de atendimentos e vendas com praticidade.</li>
+                    <li>Tenha seu negócio <span>na palma da mão</span>, de onde estiver.</li>
+                    <li><span>Tome decisões</span> melhores com base em dados e relatórios simples.</li>
+                </ol>
+            </div>
+            <img src="./assets/img/home-img2.png" alt="" class="img-fluid">
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center py-4 mt-5 border-top">
+        <p class="m-0">&copy; 2025 Adepta Sistemas e Automações</p>
+    </footer>
+
+    <!-- bootstrap (JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+@import url(./styles.css);
+
+/*bootstrap sobreescrito */
+.table-responsive {
+    background-color: var(--white);
+    height: 70dvh;
+    border-radius: 0.5rem;
+}
+
+/* classes css */
+th {
+    font-size: 0.8rem;
+    font-weight: 400;
+    border: none;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+#search-icon {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+#search-icon:hover {
+  opacity: 0.4;
+}
+
+/* media queries para telas pequenas (até 576px) */
+@media (max-width: 576px) {
+    header img {
+        max-width: 90px !important; /* logo menor */
+        height: auto;
+    }
+
+    header .btn {
+        font-size: 0.8rem !important; /* texto dos botões menor */
+        padding: 0.25rem 0.5rem !important; /* botões mais compactos */
+    }
+}

@@ -1,0 +1,103 @@
+/* index */
+@import url(./styles.css);
+
+/* bootstrap sobreescrito */
+.btn-primary {
+    background-color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    box-shadow: 0.1rem 0.1rem 0.2rem var(--light-gray);
+}
+.btn-primary:hover{
+    background-color: var(--dark-blue);
+    opacity: 0.7;
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--dark-blue);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--black);
+}
+.btn-outline-secondary:hover{
+    transition: 0.4s ease-in-out;
+}
+
+.nav-link{
+    color: var(--dark-blue);
+}
+.nav-link:hover{
+    opacity: 0.5;
+    color: var(--dark-blue);
+    transition: 0.3s ease-in-out;
+}
+
+/* classes css */
+body{
+    background-color: var(--offwhite);
+}
+header{
+    background-color: var(--white);
+}
+
+.home-title {
+    font-family: var(--font2);
+    color: var(--dark-blue);
+    border-bottom: 3px solid var(--indigo);
+    width: 20%;
+    font-size: 3rem;
+}
+.h2-span{
+    color: var(--indigo);
+}
+
+.home-text{
+    opacity: 0.7;
+    font-family: var(--font2);
+}
+.home-list-title span{
+    border-bottom: 3px solid var(--indigo);
+}
+ol.big-number li::marker {
+    font-size: 2rem; /* aumenta o número */
+    font-weight: bold;
+    font-style: italic;
+    color: var(--indigo);
+  }
+ol li{
+    width: 70%;
+    color: var(--dark-blue);
+}
+ol li span{
+   
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* mobile menu */
+#mobile-menu {
+  height: 100vh; 
+  width: 50dvw; 
+  top: 0 !important; 
+  right: 0;
+  z-index: 1050; 
+  transition: transform 0.3s ease;
+  transform: translateX(100%); /* fora da tela */
+  position: fixed; 
+  background-color: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+}
+
+/* quando o menu estiver aberto, mostra ele */
+#mobile-menu.open {
+  transform: translateX(0); /* entra na tela */
+}
+
+#menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* sombra preta com transparência */
+  inset: 0;
+}
