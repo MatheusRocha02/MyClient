@@ -74,5 +74,5 @@ Abra o arquivo `index.html` no navegador.
 - Internacionalizar a aplicação para suportar múltiplos idiomas.
 
 ---
-
+Em produção em: https://my-client-96pbeh3vi-matheus-rochas-projects-5fedfb81.vercel.app
 ## Desenvolvido por Matheus Rocha Dev 👨🏿‍💻
